@@ -1,0 +1,1110 @@
+
+/* ==================================================
+   STUDIO LETÍCIA BRITO
+   Identidade visual: Preto, Nude e Dourado
+================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto: #171412;
+    --preto-suave: #29231f;
+    --nude: #f7f1eb;
+    --nude-escuro: #e9ddd2;
+    --dourado: #bd9565;
+    --dourado-escuro: #987044;
+    --branco: #ffffff;
+    --cinza: #77716c;
+    --borda: #e9e0d9;
+    --sombra: 0 8px 25px rgba(0,0,0,0.07);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--branco);
+    color: var(--preto);
+    line-height: 1.6;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==================================================
+   CABEÇALHO
+================================================== */
+
+.header {
+    width: 100%;
+    min-height: 90px;
+    padding: 15px 6%;
+    background: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    color: var(--preto);
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--dourado);
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.logo small {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--cinza);
+    margin-top: 6px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: var(--dourado-escuro);
+}
+
+.menu .btn-menu {
+    background: var(--dourado);
+    color: var(--branco);
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.menu .btn-menu:hover {
+    background: var(--dourado-escuro);
+    color: var(--branco);
+}
+
+/* ==================================================
+   BOTÕES
+================================================== */
+
+.btn-principal,
+.btn-secundario {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-principal {
+    background: var(--dourado);
+    color: var(--branco);
+    border: 1px solid var(--dourado);
+}
+
+.btn-principal:hover {
+    background: var(--dourado-escuro);
+    border-color: var(--dourado-escuro);
+    transform: translateY(-2px);
+}
+
+.btn-secundario {
+    border: 1px solid var(--dourado);
+    color: var(--dourado);
+}
+
+.btn-secundario:hover {
+    background: var(--dourado);
+    color: var(--branco);
+}
+
+/* ==================================================
+   BANNER PRINCIPAL
+================================================== */
+
+.hero {
+    min-height: 620px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    background: var(--preto);
+    color: var(--branco);
+    overflow: hidden;
+
+      background:
+    linear-gradient(
+        rgba(20, 15, 15, 0.48),
+        rgba(20, 15, 15, 0.65)
+    ),
+    url("imagem_banner.jpg") center/cover no-repeat;
+
+  
+}
+
+.hero-conteudo {
+    padding: 90px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.destaque {
+    display: inline-block;
+    color: var(--dourado-escuro);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero .destaque {
+    color: var(--dourado);
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 5vw, 66px);
+    line-height: 1.12;
+    margin-bottom: 22px;
+    white-space: pre-line;
+    
+}
+
+.hero p {
+    max-width: 500px;
+    color: #ded6cf;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.hero-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-imagem {
+    min-height: 620px;
+     
+}
+
+/* ==================================================
+   SEÇÕES
+================================================== */
+
+.secao {
+    padding: 90px 6%;
+}
+
+.titulo-secao {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.titulo-secao h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.2;
+}
+
+.titulo-secao p {
+    color: var(--cinza);
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+/* ==================================================
+   SOBRE
+================================================== */
+
+.sobre {
+    background: var(--nude);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.sobre-imagem {
+    width: 100%;
+    max-width: 460px;
+    aspect-ratio: 1 / 1;
+
+    background:
+        url("imagem_sobre.jpeg") center center / cover no-repeat;
+
+    border-radius: 50%;
+
+    margin: 0 auto;
+}
+
+.sobre-conteudo {
+    max-width: 550px;
+}
+
+.sobre-conteudo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 4vw, 43px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.sobre-conteudo p {
+    color: var(--cinza);
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.sobre-conteudo .btn-principal {
+    margin-top: 10px;
+}
+
+/* ==================================================
+   SERVIÇOS
+================================================== */
+
+.servicos {
+    background: var(--branco);
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card-servico {
+    padding: 27px 22px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background: var(--branco);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-servico:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra);
+    border-color: var(--dourado);
+}
+
+.categoria {
+    color: var(--dourado-escuro);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 13px;
+}
+
+.card-servico h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card-servico p {
+    color: var(--cinza);
+    font-size: 13px;
+    min-height: 42px;
+    margin-bottom: 15px;
+}
+
+.card-servico strong {
+    color: var(--dourado-escuro);
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.card-servico a {
+    color: var(--preto);
+    font-weight: 700;
+    font-size: 13px;
+    border-bottom: 1px solid var(--dourado);
+    padding-bottom: 3px;
+}
+
+.card-servico a:hover {
+    color: var(--dourado-escuro);
+}
+
+/* ==================================================
+   GALERIA
+================================================== */
+
+.galeria {
+    background: var(--nude);
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.foto {
+    height: 350px;
+    border-radius: 8px;
+    background-color: var(--nude-escuro);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.foto:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra);
+}
+
+.foto-1 {
+    background-image: url("imagem_foto1.jpeg");
+}
+
+.foto-2 {
+    background-image: url("imagem_foto2.jpeg");
+}
+
+.foto-3 {
+    background-image: url("imagem_foto3.jpeg");
+}
+
+.foto-4 {
+    background-image: url("imagem_foto4.jpeg");
+}
+
+/* =====================================
+   EFEITO DA GALERIA
+===================================== */
+
+.foto {
+    transition: transform 0.5s ease,
+                box-shadow 0.5s ease;
+
+    cursor: pointer;
+}
+
+.foto:hover {
+    transform: scale(1.04);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==================================================
+   AGENDAMENTO
+================================================== */
+
+.agendamento {
+    background: #faf8f6;
+}
+
+.formulario-agendamento {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.agendamento-esquerda,
+.agendamento-direita {
+    background: var(--branco);
+    padding: 28px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+}
+
+.campo {
+    margin-bottom: 25px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.controle-logico {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    background: var(--branco);
+    outline: none;
+}
+
+.controle-logico:focus {
+    border-color: var(--dourado);
+}
+
+/* Mantém os selects disponíveis para o JavaScript */
+
+.campo-servico > .controle-logico,
+.campo-data > .controle-logico,
+.campo-horario > .controle-logico {
+    display: none;
+}
+
+/* Cards dos serviços */
+
+.servicos-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.servico-card {
+    padding: 17px;
+    border: 1px solid var(--borda);
+    background: var(--branco);
+    border-radius: 7px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.servico-card:hover {
+    border-color: var(--dourado);
+    background: var(--nude);
+}
+
+.servico-card.selecionado,
+.servico-card.ativo {
+    border: 2px solid var(--dourado);
+    background: var(--nude);
+}
+
+.servico-nome {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.servico-valor {
+    color: var(--dourado-escuro);
+    font-size: 15px;
+}
+
+/* Calendário */
+
+.calendario-container {
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.calendario-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.calendario-cabecalho h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+}
+
+.calendario-cabecalho button {
+    border: none;
+    background: var(--nude);
+    color: var(--preto);
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.calendario-cabecalho button:hover {
+    background: var(--dourado);
+    color: var(--branco);
+}
+
+.calendario-dias-semana,
+.calendario-dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    text-align: center;
+}
+
+.calendario-dias-semana span {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--cinza);
+    padding: 8px 0;
+}
+
+.calendario-dias button {
+    border: none;
+    background: transparent;
+    color: var(--preto);
+    padding: 10px 3px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.calendario-dias button:hover {
+    background: var(--nude);
+}
+
+.calendario-dias button.disponivel {
+    background: #eee1f5;
+    color: #7136a0;
+    font-weight: 800;
+}
+
+.calendario-dias button.selecionado {
+    background: var(--dourado);
+    color: var(--branco);
+}
+
+.calendario-dias button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Horários */
+
+.horarios-disponiveis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.horarios-disponiveis button {
+    padding: 12px 5px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    background: var(--branco);
+    color: var(--preto);
+    transition: 0.2s;
+}
+
+.horarios-disponiveis button:hover {
+    border-color: var(--dourado);
+}
+
+.horarios-disponiveis button.selecionado {
+    background: var(--dourado);
+    color: var(--branco);
+    border-color: var(--dourado);
+}
+
+.horarios-disponiveis button:disabled {
+    background: #f0eeee;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.mensagem-horarios {
+    grid-column: 1 / -1;
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+/* Resumo */
+
+.resumo-agendamento {
+    background: var(--nude);
+    border: 1px solid var(--nude-escuro);
+    border-radius: 8px;
+    padding: 22px;
+    margin: 25px 0;
+}
+
+.resumo-agendamento h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    margin-bottom: 18px;
+}
+
+.resumo-servico {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--nude-escuro);
+}
+
+.resumo-servico strong {
+    font-size: 14px;
+}
+
+.resumo-servico span {
+    color: var(--dourado-escuro);
+    font-weight: 800;
+}
+
+.resumo-data-horario {
+    display: grid;
+    gap: 12px;
+    padding-top: 18px;
+}
+
+.resumo-data-horario div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+}
+
+.resumo-data-horario div span {
+    color: var(--dourado-escuro);
+    font-size: 19px;
+}
+
+.resumo-data-horario strong {
+    font-size: 13px;
+}
+
+/* Dados da cliente */
+
+.dados-cliente {
+    margin-top: 25px;
+}
+
+.dados-cliente .campo {
+    margin-bottom: 17px;
+}
+
+.dados-cliente input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    outline: none;
+    background: var(--branco);
+}
+
+.dados-cliente input:focus {
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 3px rgba(189,149,101,0.12);
+}
+
+/* Botão confirmar */
+
+.btnAgendar {
+    width: 100%;
+    padding: 16px;
+    background: var(--dourado);
+    color: var(--branco);
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.btnAgendar:hover {
+    background: var(--dourado-escuro);
+}
+
+.mensagem-seguranca {
+    text-align: center;
+    font-size: 11px;
+    color: var(--cinza);
+    margin-top: 15px;
+}
+
+/* ==================================================
+   CONTATO
+================================================== */
+
+.contato {
+    background: var(--preto);
+    color: var(--branco);
+    text-align: center;
+}
+
+.contato .titulo-secao h2 {
+    color: var(--branco);
+}
+
+.contato .titulo-secao p {
+    color: #d5cec8;
+}
+
+.contato .destaque {
+    color: var(--dourado);
+}
+
+.contato-botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contato-botoes a {
+    padding: 13px 24px;
+    border: 1px solid var(--dourado);
+    border-radius: 5px;
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.contato-botoes a:hover {
+    background: var(--dourado);
+}
+
+/* ==================================================
+   RODAPÉ
+================================================== */
+
+footer {
+    background: #100e0d;
+    color: var(--branco);
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+}
+
+footer p {
+    color: #c8beb5;
+    font-size: 13px;
+    margin: 5px 0 15px;
+}
+
+footer span {
+    color: var(--dourado);
+    font-size: 12px;
+}
+
+
+/* =========================================
+   SERVIÇOS SELECIONADOS
+========================================= */
+
+.servico-card {
+    transition: 0.3s ease;
+}
+
+.servico-card.selecionado {
+    background: #c49a62;
+    border: 2px solid #b48750;
+    color: #ffffff;
+}
+
+.servico-card.selecionado p,
+.servico-card.selecionado span {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   DATAS DO CALENDÁRIO
+========================================= */
+
+.dia-calendario.disponivel {
+    background: #f0dfc7;
+    color: #8b6030;
+    font-weight: bold;
+    border: 1px solid #c49a62;
+    cursor: pointer;
+}
+
+.dia-calendario.disponivel.selecionado {
+    background: #c49a62;
+    color: #ffffff;
+    border-color: #a87940;
+}
+
+
+/* =========================================
+   HORÁRIOS
+========================================= */
+
+.horario-card {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.horario-card.agendado {
+    background: #e5e5e5;
+    color: #999999;
+    border: 1px solid #d5d5d5;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.horario-card.selecionado {
+    background: #c49a62;
+    color: #ffffff;
+    border: 1px solid #a87940;
+    font-weight: bold;
+}
+/* ==================================================
+   RESPONSIVIDADE - TABLET
+================================================== */
+
+@media (max-width: 1000px) {
+
+    .header {
+        padding: 15px 4%;
+    }
+
+    .menu {
+        gap: 17px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 0.8fr;
+    }
+
+    .hero-conteudo {
+        padding: 65px 7%;
+    }
+
+    .servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre {
+        gap: 35px;
+    }
+
+    .formulario-agendamento {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* ==================================================
+   BANNER PRINCIPAL - CELULAR
+================================================== */
+
+@media (max-width: 700px) {
+
+.header {
+    width: 100%;
+    min-height: auto;
+    padding: 18px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px 16px;
+    box-sizing: border-box;
+}
+
+.menu a {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.menu .btn-menu {
+    padding: 9px 13px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+    .hero {
+        display: flex;
+        flex-direction: column;
+
+        min-height: 550px;
+
+        background:
+            linear-gradient(
+                rgba(20, 15, 15, 0.48),
+                rgba(20, 15, 15, 0.65)
+            ),
+            url("imagem_banner.jpg") 57% center  / cover no-repeat;
+
+        justify-content: center;
+    }
+
+    .hero-conteudo {
+        width: 100%;
+        min-height: 550px;
+
+        padding: 60px 7%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+        line-height: 1.15;
+    }
+
+    .hero p {
+        font-size: 15px;
+        color: #ffffff;
+    }
+
+    .hero-imagem {
+        display: none;
+    }
+
+
+    .secao {
+        padding: 65px 5%;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .sobre-imagem {
+    width: 100%;
+    max-width: 350px;
+
+    aspect-ratio: 1 / 1;
+    height: auto;
+    min-height: 0;
+
+    border-radius: 50%;
+
+    margin: 0 auto;
+    justify-self: center;
+}
+
+    .sobre-conteudo h2 {
+        font-size: 34px;
+    }
+
+    .servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .card-servico {
+        padding: 18px 14px;
+    }
+
+    .card-servico h3 {
+        font-size: 19px;
+    }
+
+    .card-servico p {
+        font-size: 12px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .foto {
+        height: 300px;
+    }
+
+    .formulario-agendamento {
+        grid-template-columns: 1fr;
+    }
+
+    .agendamento-esquerda,
+    .agendamento-direita {
+        padding: 20px;
+    }
+
+    .servicos-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .horarios-disponiveis {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 380px) {
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .servicos-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .calendario-container {
+        padding: 10px;
+    }
+
+    .calendario-dias {
+        gap: 3px;
+    }
+
+    .calendario-dias button {
+        font-size: 11px;
+        padding: 9px 2px;
+    }
+
+    .horarios-disponiveis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
